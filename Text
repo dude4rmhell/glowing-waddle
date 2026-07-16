@@ -1,0 +1,50 @@
+Alert Type	Detailed Type	Resources	
+WEB_CHECK_GLOBAL_OUTAGE	502 Bad gateway + Request timeout	https://usj2eecp.deloitte.com — 2	
+HTTP_CHECK_GLOBAL_OUTAGE	Connection refused + 503 Service unavailable	https://aeoi.deloitte.com — 2	
+HTTP_CHECK_LOCAL_OUTAGE	Connection reset + site unexpectedly closed	workflow.gps.deloitte.com — 2	
+UNEXPECTED_LOW_LOAD	HTML element not found + Connection timeout	Vendor Apps | ALM — 2	
+AVAILABILITY_EVENT	500 Internal server error + Connection timeout	http://Focus.deloitte.com — 2	
+		ASMPrivate EA PRD-https://jpmam.cascadesuite.deloitte.com	
+			
+			
+			
+			
+			
+			
+Thresholds by metric			
+			
+Metric	Observed range		
+CPU_USAGE	"90–94.99%
+95–96.99%
+97–97.99%
+98–98.99%
+99–99.49%
+99.5–99.89%
+99.9–100%"		
+MEMORY_USAGE	90%- 92.72%- 95.0%- 100.00%		
+INFRASTRUCTURE-AVAILABILITY	90%- 92.72%- 95.0%- 120%		
+INFRASTRUCTURE-RESOURCE_CONTENTION	90%- 92.72%- 95.0%- 120%		
+INFRASTRUCTURE-CUSTOM_ALERT	90%- 92.72%- 95.0%- 120%		
+APPLICATION-AVAILABILITY			
+FAILURE_RATE	75% - 100%		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+5. Sample type–action–resource mappings			
+			
+Alert Type	Detailed Type	Action	Resource
+WEB_CHECK_GLOBAL_OUTAGE	503 Service unavailable	Loading of the application URL	https://usj2eecp.deloitte.com
+WEB_CHECK_GLOBAL_OUTAGE	HTML element not found	click on “Dashboard”	https://ipc.deloitte.com/ipc/2025/Login.aspx
+WEB_CHECK_GLOBAL_OUTAGE	Connection refused	Loading of RSA SecurID URL	EA Prod RSA SecurID https://10.28.13.197:8444
+HTTP_CHECK_GLOBAL_OUTAGE	Request timeout	Not provided	futureofmaintenance.deloitte.com
+HTTP_CHECK_GLOBAL_OUTAGE	401 Unauthorized	Not provided	svc.mi.deloitte.com
+HTTP_CHECK_LOCAL_OUTAGE	Connection timeout	URL Monitoring Migrated from Alertsite	RHP API URL SAP PRD
+UNEXPECTED_LOW_LOAD	Not provided	Not provided	PSG-iPACS-CORE-PROD(2025)
